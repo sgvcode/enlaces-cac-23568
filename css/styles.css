@@ -20,12 +20,12 @@ h3,
 h4,
 h5,
 h6 {
-    width: 80%;
+    width: 90%;
     text-align: center;
     color: white;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    max-width: 600px;
+    max-width: 500px;
     padding: 10px 0;
 }
 
@@ -59,12 +59,12 @@ img.logo {
     list-style: none;
     width: 100%;
     border: none;
-    width: 70%;
-    max-width: 600px;
+    width: 90%;
+    max-width: 500px;
     margin: 4px auto;
     padding: 10px 20px;
-    border-radius: 1rem;
-    font-size: 20px;
+    border-radius: 3rem;
+    font-size: 18px;
 }
 
 .utiles {

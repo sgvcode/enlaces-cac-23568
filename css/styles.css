@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    padding: 30px;
+    width: 100%;
+    background-color: #151C36;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    width: 80%;
+    text-align: center;
+    color: white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    max-width: 600px;
+    padding: 10px 0;
+}
+
+h2,
+h3 {
+    border: none;
+    margin: 10px auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img.logo {
+    width: 20%;
+    padding: 30px 0;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.enlaces {
+    background-color: #9A58DF;
+    list-style: none;
+    width: 100%;
+    border: none;
+    width: 70%;
+    max-width: 600px;
+    margin: 4px auto;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    font-size: 20px;
+}
+
+.utiles {
+    background-color: rgb(228, 141, 0);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.pendiente {
+    position: relative;
+    background-color: yellow;
+    padding: 0 10px;
+    border-radius: 25px;
+    color: black;
+    font-size: .8rem;
+}
+
+.profe {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.profe:hover {
+    color: yellow;
+}

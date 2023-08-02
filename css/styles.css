@@ -71,6 +71,10 @@ img.logo {
     background-color: rgb(228, 141, 0);
 }
 
+.vscode {
+    background-color: rgb(47, 123, 230);
+}
+
 a {
     color: white;
     text-decoration: none;

@@ -65,6 +65,11 @@ img.logo {
     padding: 10px 20px;
     border-radius: 3rem;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.enlaces:hover {
+    filter: brightness(120%);
 }
 
 .utiles {

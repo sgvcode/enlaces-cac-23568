@@ -33,6 +33,23 @@ h2,
 h3 {
     border: none;
     margin: 10px auto;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+}
+
+h2 {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+}
+
+h3 {
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+}
+
+.comision {
+    color: #b9d6ff;
 }
 
 header {
@@ -43,7 +60,7 @@ header {
 }
 
 img.logo {
-    width: 20%;
+    width: min(40vw, 350px);
     padding: 30px 0;
 }
 
@@ -69,7 +86,8 @@ img.logo {
 }
 
 .enlaces:hover {
-    filter: brightness(120%);
+    filter: brightness(105%);
+
 }
 
 .utiles {
@@ -77,7 +95,7 @@ img.logo {
 }
 
 .vscode {
-    background-color: rgb(47, 123, 230);
+    background-color: #2f7be6;
 }
 
 a {
@@ -86,12 +104,12 @@ a {
 }
 
 a:hover {
-    color: yellow;
+    color: rgb(255, 255, 113);
 }
 
 .pendiente {
     position: relative;
-    background-color: yellow;
+    background-color: #ffc800;
     padding: 0 10px;
     border-radius: 25px;
     color: black;
@@ -104,5 +122,5 @@ a:hover {
 }
 
 .profe:hover {
-    color: yellow;
+    color: #ffc800;
 }

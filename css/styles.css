@@ -6,7 +6,8 @@
     --amarillo: rgb(228, 141, 0);
     --celeste: #2f7be6;
     --amarilloClaro: #ffc800;
-    --blanco: white;
+    --blanco: whitesmoke;
+    --rojo: crimson;
 }
 
 
@@ -16,11 +17,18 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-    padding: 30px;
     width: 100%;
+
+}
+
+body.index {
     background-color: var(--azul);
 }
 
@@ -30,12 +38,11 @@ h3,
 h4,
 h5,
 h6 {
-    width: 90%;
+    width: clamp(260px, 90%, 600px);
     text-align: center;
     color: var(--blanco);
     border-top: 1px solid var(--blanco);
     border-bottom: 1px solid var(--blanco);
-    max-width: 500px;
     padding: 10px 0;
 }
 
@@ -62,11 +69,92 @@ h3 {
     color: #b9d6ff;
 }
 
-header {
+.header-index {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.botonera {
+    display: flex;
+    position: fixed;
+    gap: 10px;
+    color: var(--blanco);
+    font-size: 1.3rem;
+    top: 20px;
+    right: 30px;
+    background-color: var(--azul);
+    padding: 12px;
+    border-radius: 50%;
+}
+
+nav {
+    z-index: 1000;
+}
+
+.icon-style {
+    font-size: 2rem;
+    z-index: 1001;
+}
+
+.icon-style:active {
+    filter: invert();
+    transition: all .3s ease;
+}
+
+.icon-style:hover {
+    color: var(--amarillo);
+    cursor: pointer;
+}
+
+ul.menu {
+    position: absolute;
+    width: 240px;
+    height: 100vh;
+    list-style: none;
+    text-align: right;
+    top: -20px;
+    right: -20px;
+    background-color: var(--azul);
+    padding: 30px;
+    border: 1px solid rgba(245, 245, 245, 0.131);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: block;
+    box-shadow: 0 1px 10px black;
+    z-index: 999;
+}
+
+.fa-times {
+    margin: -3px 3px;
+    font-size: 2.5rem;
+    transition: all .3s ease;
+}
+
+.menu-li {
+    position: relative;
+    top: 50px;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+.acceso {
+    cursor: pointer;
+}
+
+.menu-li:hover {
+    color: var(--amarillo);
+}
+
+#mostrar-menu {
+    transform: translateX(240px);
+    transition: transform .3s ease-out;
+}
+
+#mostrar-menu.mostrar {
+    transform: translateX(0);
+    transition: transform .3s ease-out;
 }
 
 img.logo {
@@ -84,10 +172,8 @@ img.logo {
 .enlaces {
     background-color: var(--violeta);
     list-style: none;
-    width: 100%;
     border: none;
-    width: 90%;
-    max-width: 500px;
+    width: clamp(260px, 90%, 500px);
     margin: 4px auto;
     padding: 10px 20px;
     border-radius: 3rem;
@@ -97,7 +183,6 @@ img.logo {
 
 .enlaces:hover {
     filter: brightness(115%);
-
 }
 
 .utiles {
@@ -130,4 +215,206 @@ a {
 
 .profe a:hover {
     color: var(--amarillo);
+}
+
+/* Inicio Modal Formulario */
+
+.form-titulo {
+    padding-bottom: 30px;
+}
+
+form {
+    margin: 0 auto;
+    width: clamp(260px, 90%, 800px);
+    height: auto;
+}
+
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+input,
+textarea {
+    background: none;
+    color: var(--blanco);
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--blanco);
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    color: var(--amarillo);
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: var(--blanco);
+}
+
+label {
+    color: var(--blanco);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+input:focus~.barra::before,
+textarea:focus~.barra::before {
+    width: 100%;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: '';
+    height: 1px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #999, orangered);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+
+button.submit {
+    background-color: transparent;
+    border: 1px solid var(--blanco);
+    display: block;
+    width: 140px;
+    height: 40px;
+    color: var(--blanco);
+    border-radius: 4px;
+    margin: 10px auto;
+    cursor: pointer;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button.submit:hover {
+    background-color: var(--blanco);
+    color: var(--azul);
+}
+
+.formulario {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1200;
+}
+
+.form-content {
+    background-color: var(--azul);
+    padding: 80px 00px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    width: clamp(260px, 90%, 600px);
+    border: 1px solid rgba(245, 245, 245, 0.131);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--blanco);
+    font-weight: lighter;
+}
+
+.close:hover {
+    color: var(--amarillo);
+}
+
+/* Fin Modal Formulario */
+
+/* Training */
+body.training {
+    background-color: var(--blanco);
+}
+
+.header-training {
+    background-color: var(--azul);
+    padding: 20px 0;
+}
+
+.main-training {
+    width: clamp(260px, 95%, 1200px);
+    margin: auto;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    width: clamp(260px, 100%, 1200px);
+    margin: 70px auto 0;
+}
+
+cite {
+    display: flex;
+    justify-content: center;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: .3rem 0;
+}
+
+.header-training h1 {
+    display: block;
+    width: clamp(260px, 90%, 1200px);
+    text-align: left;
+    margin: auto;
+    border: none;
+}
+
+.personajes p {
+    color: darkslategray;
+    margin: auto;
+    padding: 30px 40px;
+    text-align: justify;
+    hyphens: auto;
+    border-bottom: 1px dashed var(--rojo);
+}
+
+.destaque {
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--azul);
+}
+
+.texto-pie {
+    display: block;
+    padding: 10px 0;
+    font-size: .8rem;
+    color: grey;
+    text-align: center;
 }

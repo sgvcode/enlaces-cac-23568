@@ -4,94 +4,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Comisión #23568 Full Stack NodeJS</title>
 </head>
 
-<body>
-    <header>
+<body class="index">
+    <header class="header-index">
         <img class="logo" src="img/logoCACsinbloque.png" alt="Promoción de Codo a Codo">
         <h1>Full Stack NodeJS</h1>
         <h2>Comisión <span class="comision">#23568</span><br><span class="profe"><a
-                    href="mailto:alberto.feldman@bue.edu.ar">Profesor: Gabriel
-                    Alberto
-                    Feldman</a></span></h2>
+                    href="mailto:alberto.feldman@bue.edu.ar">Profesor: Gabriel Alberto Feldman</a></span></h2>
     </header>
+    <nav class="botonera">
+        <!-- <i id="bdark" class="fa-solid fa-circle-half-stroke icon-style"></i> -->
+        <i id="icono-burger" class="fa-solid fa-burger icon-style"></i>
 
-    <h3 class="margin-top-2">Enlaces del curso</h3>
-    <div class="links-container">
-        <button class="enlaces">
-            <a href="https://meet.google.com/zxa-ovai-chk" target="_blank">Clase en vivo - Google Meet</a>
-        </button>
-        <br>
-        <button class="enlaces">
-            <a href="https://www.youtube.com/playlist?list=PLzTjQqtUY-8QerEWF93BSavTPX5TP2CZF" target="_blank">Clases
-                grabadas -
-                Youtube</a>
-        </button>
-        <br>
-        <button class="enlaces">
-            <a href="https://forms.gle/JJ2Hr5NbTaHf7kbR7" target="_blank">Formulario de asistencia</a>
-        </button>
-        <br>
-        <button class="enlaces">
-            <a href="https://drive.google.com/drive/folders/1M9ZD9pxU4eq5mJU0Qzz1Y4hlogj9zlWW?usp=sharing"
-                target="_blank">Material compartido - Google Drive</a>
-        </button>
-        <br>
-        <button class="enlaces">
-            <a href="https://aulasvirtuales.bue.edu.ar/" target="_blank">Plataforma Aula Virtual</a>
-        </button>
-        <br>
-        <button class="enlaces">
-            <a href="https://github.com/" target="_blank">Proyectos y códigos -
-                GitHub <span class="pendiente">Pendiente</span></a>
-        </button>
-        <br>
-        <button class="enlaces">
-            <a href="https://discord.com" target="_blank">Canal de Discord <span class="pendiente">Pendiente</span></a>
-        </button>
-        <br>
-        <button class="enlaces">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScpRZVgniUt5nRlEReoyy5cGnMtgTMLmjfs5tZjHxS9U5Qp_A/viewform"
-                target="_blank">Consultas a tutora - Agustina Lemoine</a>
-        </button>
+        <ul class="menu" id="mostrar-menu">
+            <li><a class="menu-li" href="index.html">Comisión ✓</a></li>
+            <li><a class="menu-li" href="training.html">Training ✓</a></li>
+            <li><a id="form-link" onclick="cerrarMenu()"><span class="acceso menu-li" href="">Contacto ✓</a></li>
+        </ul>
+    </nav class="botonera">
+
+    <main class="main-index">
+        <section>
+            <h3 class="margin-top-2">Enlaces del curso</h3>
+            <div class="links-container">
+                <button class="enlaces">
+                    <a href="https://meet.google.com/zxa-ovai-chk" target="_blank">Clase en vivo - Google Meet</a>
+                </button>
+                <br>
+                <button class="enlaces">
+                    <a href="https://www.youtube.com/playlist?list=PLzTjQqtUY-8QerEWF93BSavTPX5TP2CZF"
+                        target="_blank">Clases
+                        grabadas -
+                        Youtube</a>
+                </button>
+                <br>
+                <button class="enlaces">
+                    <a href="https://forms.gle/JJ2Hr5NbTaHf7kbR7" target="_blank">Formulario de asistencia</a>
+                </button>
+                <br>
+                <button class="enlaces">
+                    <a href="https://drive.google.com/drive/folders/1M9ZD9pxU4eq5mJU0Qzz1Y4hlogj9zlWW?usp=sharing"
+                        target="_blank">Material compartido - Google Drive</a>
+                </button>
+                <br>
+                <button class="enlaces">
+                    <a href="https://aulasvirtuales.bue.edu.ar/" target="_blank">Plataforma Aula Virtual</a>
+                </button>
+                <br>
+                <button class="enlaces">
+                    <a href="https://github.com/" target="_blank">Proyectos y códigos -
+                        GitHub <span class="pendiente">Pendiente</span></a>
+                </button>
+                <br>
+                <button class="enlaces">
+                    <a href="https://discord.com" target="_blank">Canal de Discord <span
+                            class="pendiente">Pendiente</span></a>
+                </button>
+                <br>
+                <button class="enlaces">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScpRZVgniUt5nRlEReoyy5cGnMtgTMLmjfs5tZjHxS9U5Qp_A/viewform"
+                        target="_blank">Consultas a tutora - Agustina Lemoine</a>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <h3>Enlaces útiles</h3>
+            <div class="links-container">
+                <button class="enlaces vscode">
+                    <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code - Descarga</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="http://w3schools.com/" target="_blank">W3Schools - Tutoriales</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://pixabay.com/" target="_blank">Pixabay - Imagenes</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap
+                        5</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://nodejs.org/en/docs/" target="_blank">NodeJS - Documentación</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://expressjs.com/" target="_blank">Express - Documentación</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://git-scm.com/docs" target="_blank">Git - Documentación</a>
+                </button>
+                <br>
+            </div>
+        </section>
+    </main>
+
+    <!-- INICIO Modal Formulario -->
+    <div class="formulario" id="form-modal">
+        <div class="form-content">
+            <h2 id="form-titulo" class="form-titulo">Hablamos?</h2>
+            <form action="scripts/mail.php" method="POST">
+                <div class="form">
+                    <div class="grupo">
+                        <input type="text" name="nombre" required><span class="barra"></span>
+                        <label id="nombre">Nombre</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="email" name="email" required><span class="barra"></span>
+                        <label id="email">Email</label>
+                    </div>
+                    <div class="grupo">
+                        <textarea name="mensaje" rows="3" required></textarea><span class="barra"></span>
+                        <label id="mensaje">Mensaje</label>
+                    </div>
+                    <button class="submit" id="submit" type="submit">ENVIAR</button>
+                </div>
+            </form>
+            <span class="close" id="form-close"><i class="fa-solid fa-times"></i></span>
+        </div>
     </div>
+    <!-- FIN Modal Formulario -->
 
     <footer>
-        <h3>Enlaces útiles</h3>
-</body>
-<div class="links-container">
-    <button class="enlaces vscode">
-        <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code - Descarga</a>
-    </button>
-    <br>
-    <button class="enlaces utiles">
-        <a href="http://w3schools.com/" target="_blank">W3Schools - Tutoriales</a>
-    </button>
-    <br>
-    <button class="enlaces utiles">
-        <a href="https://pixabay.com/" target="_blank">Pixabay - Imagenes</a>
-    </button>
-    <br>
-    <button class="enlaces utiles">
-        <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap 5</a>
-    </button>
-    <br>
-    <button class="enlaces utiles">
-        <a href="https://nodejs.org/en/docs/" target="_blank">NodeJS - Documentación</a>
-    </button>
-    <br>
-    <button class="enlaces utiles">
-        <a href="https://expressjs.com/" target="_blank">Express - Documentación</a>
-    </button>
-    <br>
-    <button class="enlaces utiles">
-        <a href="https://git-scm.com/docs" target="_blank">Git - Documentación</a>
-    </button>
-    <br>
-</div>
-</footer>
+        <span class="texto-pie">sgvero - 2023</span>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
 </body>
 
 </html>

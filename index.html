@@ -21,7 +21,8 @@
         <i id="icono-burger" class="fa-solid fa-burger icon-style"></i>
 
         <ul class="menu" id="mostrar-menu">
-            <li><a class="menu-li" href="index.html">Comisión ✓</a></li>
+            <li><a class="menu-li" href="index.html">Enlaces ✓</a></li>
+            <li><a class="menu-li" href="#recursos">Recursos ✓</a></li>
             <li><a class="menu-li" href="training.html">Training ✓</a></li>
             <li><a id="form-link" onclick="cerrarMenu()"><span class="acceso menu-li" href="">Contacto ✓</a></li>
         </ul>
@@ -106,13 +107,48 @@
                 <br>
             </div>
         </section>
+        <section>
+            <h3>Recursos útiles</h3>
+            <div class="links-container">
+                <button class="enlaces vscode">
+                    <a href=https://i.emezeta.com/weblog/html5-cheatsheet/html5-cheatsheet-emezeta.pdf
+                        target="_blank">Cheats HTML</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="http://w3schools.com/" target="_blank">W3Schools - Tutoriales</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://pixabay.com/" target="_blank">Pixabay - Imagenes</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Bootstrap
+                        5</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://nodejs.org/en/docs/" target="_blank">NodeJS - Documentación</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://expressjs.com/" target="_blank">Express - Documentación</a>
+                </button>
+                <br>
+                <button class="enlaces utiles">
+                    <a href="https://git-scm.com/docs" target="_blank">Git - Documentación</a>
+                </button>
+                <br>
+            </div>
+        </section>
     </main>
 
     <!-- INICIO Modal Formulario -->
     <div class="formulario" id="form-modal">
         <div class="form-content">
             <h2 id="form-titulo" class="form-titulo">Hablamos?</h2>
-            <form action="enviar.php" method="POST">
+            <form action="mail.php" method="POST">
                 <div class="form">
                     <div class="grupo">
                         <input type="text" name="nombre" required><span class="barra"></span>

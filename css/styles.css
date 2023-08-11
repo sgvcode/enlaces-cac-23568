@@ -15,6 +15,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: all .3s ease;
 }
 
 body {
@@ -25,6 +26,12 @@ body {
 
 body.index {
     background-color: var(--azul);
+}
+
+a,
+a:visited {
+    color: var(--blanco);
+    text-decoration: none;
 }
 
 h1,
@@ -156,7 +163,7 @@ ul.menu {
 }
 
 img.logo {
-    width: min(40vw, 350px);
+    width: min(50vw, 350px);
     padding: 30px 0;
 }
 
@@ -218,12 +225,6 @@ img.logo {
 
 .fa-file-pdf {
     color: var(--rojo);
-}
-
-a,
-a:visited {
-    color: var(--blanco);
-    text-decoration: none;
 }
 
 .pendiente {
@@ -499,20 +500,27 @@ hr {
     content: " -"
 }
 
-.btn__up {
-    color: #48506d85;
+/* Boton Ir Arriba */
+#boton-arriba {
+    width: 40px;
+    height: 40px;
+    color: var(--blanco);
+    background-color: var(--rojo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    z-index: 1000;
     cursor: pointer;
-    font-size: 2.2rem;
-    border: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    border: 4px solid transparent;
+    transition: all .3s ease;
+    transform: scale(0);
 }
 
-.btn__up:hover {
-    color: var(--amarillo);
+#boton-arriba:hover {
+    transform: scale(1.1);
+    border: 4px solid var(--rojo);
 }

@@ -14,8 +14,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
     scroll-behavior: smooth;
-    transition: all .3s ease;
 }
 
 body {
@@ -32,6 +35,10 @@ a,
 a:visited {
     color: var(--blanco);
     text-decoration: none;
+}
+
+.full {
+    scroll-margin-top: 50px;
 }
 
 h1,
@@ -488,10 +495,6 @@ hr {
     height: 5px;
 }
 
-:target {
-    scroll-margin-top: 40px;
-}
-
 .sub-li {
     font-size: .9rem;
 }
@@ -518,6 +521,7 @@ hr {
     border: 4px solid transparent;
     transition: all .3s ease;
     transform: scale(0);
+    z-index: 2000;
 }
 
 #boton-arriba:hover {

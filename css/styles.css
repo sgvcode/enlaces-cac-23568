@@ -23,10 +23,6 @@ body {
     width: 100%;
 }
 
-/* :target {
-    scroll-margin-top: 40px;
-} */
-
 body.index {
     background-color: var(--azul);
 }
@@ -224,7 +220,8 @@ img.logo {
     color: var(--rojo);
 }
 
-a {
+a,
+a:visited {
     color: var(--blanco);
     text-decoration: none;
 }

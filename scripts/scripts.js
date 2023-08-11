@@ -8,7 +8,7 @@ iconoBurger.addEventListener('click', () => {
     iconoBurger.classList.toggle('fa-times');
 });
 
-// Ingreso y registro
+// Formulario de contacto
 document.getElementById('form-link').addEventListener('click', function (event) {
     event.preventDefault();
     document.getElementById('form-modal').style.display = 'flex';
@@ -27,3 +27,22 @@ function resetForm() {
     document.getElementById('username').value = '';
     document.getElementById('password').value = '';
 }
+
+// Boton Ir Arriba
+document.addEventListener("scroll", function () {
+    var scrollButton = document.getElementById("irArriba");
+    if (window.scrollY >= 20) {
+        scrollButton.style.opacity = "1";
+    } else {
+        scrollButton.style.opacity = "0";
+    }
+});
+
+// Animación suave para desplazarse hacia arriba al hacer clic en el botón
+document.getElementById("irArriba").addEventListener("click", function (event) {
+    event.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

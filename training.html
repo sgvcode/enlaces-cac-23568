@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/training.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>CAC#23568 - Training Frontend</title>
 </head>
@@ -18,32 +17,44 @@
         <ul class="menu" id="mostrar-menu">
             <li><a class="menu-li" href="index.html">Comisión ✓</a></li>
             <li><a class="menu-li" href="training.html">Training ✓</a></li>
+            <li><a class="menu-li sub-li" href="#spiderman">Spiderman</a></li>
+            <li><a class="menu-li sub-li" href="#deadpool">Deadpool</a></li>
+            <li><a class="menu-li sub-li" href="#ironman">Ironman</a></li>
+            <li><a class="menu-li sub-li" href="#capamerica">Capitán América</a></li>
+            <li><a class="menu-li sub-li" href="#thoro">Thor</a></li>
         </ul>
     </nav class="botonera">
     <header class="header-training">
         <h1>Marvel Comics</h1>
         </div>
     </header>
+    <!-- <nav class="marvel">
+        <ul class="marvel-ul">
+            <li class="marvel-li"><a href="#spiderman">Spiderman</a></li>
+            <li class="marvel-li"><a href="#deadpool">Deadpool</a></li>
+            <li class="marvel-li"><a href="#ironman">Ironman</a></li>
+            <li class="marvel-li"><a href="#capamerica">Capitán América</a></li>
+            <li class="marvel-li"><a href="#thoro">Thor</a></li>
+        </ul>
+    </nav> -->
     <main class="main-training">
         <section class="personajes">
-            <article>
+            <article class="full" id="spiderman">
                 <picture>
                     <img class="fotos" src="img/spiderman.webp" alt="Spiderman">
                     <cite>Spiderman</cite>
                 </picture>
                 <p>
                     "<span class="destaque">Spiderman</span>, alter ego de <span class="destaque">Peter Parker</span>,
-                    es
-                    un
-                    icónico superhéroe de Marvel. Tras ser mordido por una araña radiactiva, adquiere poderes como
-                    agilidad
-                    sobrehumana y la habilidad de trepar paredes. Combina ingenio con valentía en su lucha contra el
-                    crimen,
-                    balanceándose entre rascacielos con su lanzaredes y traje distintivo. Su dualidad como estudiante y
+                    es un icónico superhéroe de Marvel. Tras ser mordido por una araña radiactiva, adquiere poderes como
+                    agilidad sobrehumana y la habilidad de trepar paredes. Combina ingenio con valentía en su lucha
+                    contra el
+                    crimen, balanceándose entre rascacielos con su lanzaredes y traje distintivo. Su dualidad como
+                    estudiante y
                     protector de Nueva York lo convierte en un querido y emblemático personaje."
                 </p>
             </article>
-            <article>
+            <article class="full" id="deadpool">
                 <picture>
                     <img class="fotos" src="img/deaspool_.webp" alt="Spiderman">
                     <cite>Deadpool</cite>
@@ -57,7 +68,7 @@
                     superhéroes tradicionales."
                 </p>
             </article>
-            <article>
+            <article class="full" id="ironman">
                 <picture>
                     <img class="fotos" src="img/ironman.webp" alt="Spiderman">
                     <cite>Ironman</cite>
@@ -70,7 +81,7 @@
                     Vengadores, defendiendo el mundo con estilo y determinación."
                 </p>
             </article>
-            <article>
+            <article class="full" id="capamerica">
                 <picture>
                     <img class="fotos" src="img/capamerica1.webp" alt="Spiderman">
                     <cite>Capitán América</cite>
@@ -83,7 +94,7 @@
                     convierten en un líder valiente en la lucha contra villanos y amenazas globales."
                 </p>
             </article>
-            <article>
+            <article class="full" id="thoro">
                 <picture>
                     <img class="fotos" src="img/thor.webp" alt="Spiderman">
                     <cite>Thor</cite>
@@ -98,18 +109,12 @@
             </article>
         </section>
     </main>
+    <a href="#" id="irArriba" class="btn__up"><i class="fa-solid fa-circle-chevron-up"></i></a>
+
     <footer>
         <span class="texto-pie">Personajes de Marvel | sgvero - 2023</span>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var formLink = document.getElementById('form-link');
-            if (formLink) {
-                formLink.click(); // Simula un clic en el enlace para abrir el modal
-            }
-        });
-    </script>
     <script src="scripts/scripts.js"></script>
 </body>
 

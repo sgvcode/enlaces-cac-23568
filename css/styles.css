@@ -516,9 +516,8 @@ hr {
     text-shadow: 0 1px 1px black;
 }
 
-.marvel-li::before,
-.marvel-li::after {
-    content: "|";
+.marvel-li::before {
+    content: "• ";
     color: var(--blanco);
 }
 
@@ -527,7 +526,7 @@ hr {
 }
 
 .sub-li::after {
-    content: " -"
+    content: " •"
 }
 
 /* Boton Ir Arriba */

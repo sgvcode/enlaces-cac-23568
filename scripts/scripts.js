@@ -13,7 +13,7 @@ function scrollUp() {
 botonArriba = document.getElementById("boton-arriba");
 window.onscroll = function () {
     let scroll = document.documentElement.scrollTop;
-    if (scroll > 50) {
+    if (scroll > 100) {
         botonArriba.style.transform = "scale(1)";
     } else {
         botonArriba.style.transform = "scale(0)";

@@ -481,8 +481,14 @@ footer {
 }
 
 .marvel {
-    background-color: var(--azul);
+    background-color: #EC1D26;
     padding: 10px 0 0;
+}
+
+hr {
+    border: none;
+    background-color: var(--azul);
+    height: 2px;
 }
 
 .marvel-ul {
@@ -506,13 +512,14 @@ footer {
 
 .marvel-li :hover {
     cursor: pointer;
-    color: var(--amarilloClaro);
+    color: var(--blanco);
+    text-shadow: 0 1px 1px black;
 }
 
 .marvel-li::before,
 .marvel-li::after {
     content: "|";
-    color: var(--rojo);
+    color: var(--blanco);
 }
 
 .sub-li {

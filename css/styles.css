@@ -201,6 +201,7 @@ img.logo {
     font-size: 18px;
     cursor: pointer;
     text-shadow: 0 1px 3px black;
+    text-align: center;
 }
 
 .enlaces:hover {

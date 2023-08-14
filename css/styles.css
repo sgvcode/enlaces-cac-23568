@@ -264,6 +264,8 @@ img.logo {
     border-radius: 25px;
     color: black;
     font-size: .8rem;
+    text-shadow: none;
+    font-weight: 600;
 }
 
 .profe {

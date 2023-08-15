@@ -412,6 +412,23 @@ button.submit:hover {
     color: var(--amarillo);
 }
 
+.figma-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: dimgrey;
+}
+
+.figma {
+    padding-right: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.figma-text {
+    text-align: left
+}
+
 /* Fin Modal Formulario */
 
 /* Training */

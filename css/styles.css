@@ -9,6 +9,7 @@
     --blanco: whitesmoke;
     --rojo: crimson;
     --rojoClaro: rgb(185, 60, 85);
+    --negro: rgb(31, 31, 31);
 }
 
 * {
@@ -416,7 +417,8 @@ button.submit:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: dimgrey;
+    background-color: rgb(197, 200, 201);
+    color: var(--negro);
 }
 
 .figma {

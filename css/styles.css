@@ -413,24 +413,6 @@ button.submit:hover {
     color: var(--amarillo);
 }
 
-.figma-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(197, 200, 201);
-    color: var(--negro);
-}
-
-.figma {
-    padding-right: 20px;
-    width: 50px;
-    height: auto;
-}
-
-.figma-text {
-    text-align: left
-}
-
 /* Fin Modal Formulario */
 
 /* Training */
@@ -576,4 +558,24 @@ hr {
     transform: scale(1.1);
     background-color: var(--rojo);
     border: 4px solid var(--rojo);
+}
+
+/* boton figma */
+.figma-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(197, 200, 201);
+    color: var(--negro);
+}
+
+.figma {
+    padding-right: 20px;
+    width: 50px;
+    height: auto;
+}
+
+.figma-text {
+    text-align: left;
+    color: var(--negro);
 }

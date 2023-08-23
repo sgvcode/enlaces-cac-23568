@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@import 'marvel.css';
 
 :root {
     --violeta: #9A58DF;
@@ -429,7 +430,7 @@ button.submit:hover {
 /* Fin Modal Formulario */
 
 /* Training */
-body.training {
+/* body.training {
     background-color: var(--blanco);
 }
 
@@ -478,7 +479,6 @@ cite {
     padding: 30px 40px;
     text-align: justify;
     hyphens: auto;
-    /* border-bottom: 1px dashed var(--rojo); */
 }
 
 .destaque {
@@ -495,9 +495,9 @@ footer {
     font-size: .8rem;
     color: grey;
     text-align: center;
-}
+} */
 
-.marvel {
+/* .marvel {
     background-color: #EC1D26;
     padding: 10px 0 0;
 }
@@ -544,7 +544,7 @@ hr {
 
 .sub-li::after {
     content: " •"
-}
+} */
 
 /* Boton Ir Arriba */
 #boton-arriba {

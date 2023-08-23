@@ -1,0 +1,128 @@
+body.training {
+    background-color: var(--blanco);
+}
+
+.header-index {
+    padding: 70px 0 0;
+}
+
+.header-training {
+    background-color: var(--azul);
+    padding: 20px 0;
+}
+
+.main-training {
+    width: clamp(260px, 100%, 1200px);
+    margin: auto;
+}
+
+@keyframes show {
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    width: clamp(260px, 100%, 1200px);
+    margin: 70px auto 0;
+    transform: scale(0);
+    animation: show;
+    animation-timeline: view();
+    animation-fill-mode: both;
+    border-bottom: 10px solid var(--azul);
+}
+
+cite {
+    display: flex;
+    justify-content: center;
+    /* background-color: var(--rojo); */
+    color: var(--rojo);
+    /* color: var(--blanco); */
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: .5rem 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    /* overflow-x: hidden; */
+    object-fit: cover;
+}
+
+.personajes p {
+    color: darkslategray;
+    margin: auto;
+    padding: 30px 40px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.destaque {
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--azul);
+}
+
+.texto-pie {
+    display: block;
+    padding: 40px 0;
+    font-size: .8rem;
+    color: grey;
+    text-align: center;
+}
+
+.marvel {
+    background-color: #EC1D26;
+    padding: 10px 0 0;
+}
+
+hr {
+    border: none;
+    background-color: var(--azul);
+    height: 2px;
+}
+
+.marvel-ul {
+    width: clamp(260px, 90%, 1200px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.marvel-li {
+    padding-bottom: 10px;
+    font-size: .8rem;
+}
+
+.marvel-li a:link,
+.marvel-li:visited {
+    padding-right: 0px;
+}
+
+.marvel-li :hover {
+    cursor: pointer;
+    color: var(--blanco);
+    text-shadow: 0 1px 1px black;
+}
+
+.marvel-li::before {
+    content: "• ";
+    color: var(--blanco);
+}
+
+.sub-li {
+    font-size: .9rem;
+}
+
+.sub-li::after {
+    content: " •"
+}

@@ -35,13 +35,12 @@ body.training {
     width: clamp(260px, 100%, 1200px);
     margin: 70px auto 0;
     /* Aplico animación */
-    /* transform: scale(0); */
     animation: show;
     view-timeline-name: --foto;
     view-timeline-axis: block;
     animation-timeline: --foto;
     animation-name: show;
-    animation-range: entry 25% cover 60%;
+    animation-range: entry 25% cover 70%;
     animation-fill-mode: both;
     /*  */
     border-bottom: 10px solid var(--azul);

@@ -16,6 +16,7 @@ body.training {
     margin: auto;
 }
 
+/* Animación */
 @keyframes show {
     100% {
         transform: scale(1);
@@ -27,10 +28,12 @@ body.training {
     justify-content: center;
     width: clamp(260px, 100%, 1200px);
     margin: 70px auto 0;
+    /* Aplico animación */
     transform: scale(0);
     animation: show;
     animation-timeline: view();
     animation-fill-mode: both;
+    /*  */
     border-bottom: 10px solid var(--azul);
 }
 
@@ -50,7 +53,6 @@ cite {
     align-items: center;
     justify-content: center;
     max-height: 100vh;
-    /* overflow-x: hidden; */
     object-fit: cover;
 }
 

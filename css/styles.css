@@ -171,6 +171,9 @@ ul.menu {
 }
 
 .menu-li {
+    display: flex;
+    justify-content: end;
+    font-size: .9rem;
     position: relative;
     top: 50px;
     line-height: 3rem;
@@ -179,7 +182,18 @@ ul.menu {
 }
 
 .acceso {
+    border-top: 1px dotted var(--blanco);
+    border-bottom: 1px dotted var(--blanco);
+    color: var(--celeste);
     cursor: pointer;
+}
+
+.training {
+    color: var(--rojoClaro);
+}
+
+.training:hover {
+    color: var(--rojo) !important;
 }
 
 .menu-li:hover {

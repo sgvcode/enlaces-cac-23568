@@ -24,6 +24,10 @@
 html,
 body {
     scroll-behavior: smooth;
+    background-image: url('../img/background.webp');
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 body {

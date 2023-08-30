@@ -2,6 +2,11 @@ body.training {
     background-color: var(--blanco);
 }
 
+.logo-marvel {
+    margin: 5px 30px 0;
+    width: clamp(100px, 30%, 200px);
+}
+
 .header-index {
     padding: 70px 0 0;
 }
@@ -14,6 +19,7 @@ body.training {
 .main-training {
     width: clamp(260px, 100%, 1200px);
     margin: auto;
+    /* overflow-x: hidden; */
 }
 
 /* Animación */
@@ -40,7 +46,7 @@ body.training {
     view-timeline-axis: block;
     animation-timeline: --foto;
     animation-name: show;
-    animation-range: entry 25% cover 70%;
+    animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
     /*  */
     border-bottom: 10px solid var(--azul);
@@ -63,6 +69,7 @@ cite {
     justify-content: center;
     max-height: 100vh;
     object-fit: cover;
+    overflow-x: hidden;
 }
 
 .personajes p {

@@ -44,7 +44,7 @@ a:visited {
 }
 
 .full {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 10px;
 }
 
 .todos {
@@ -80,11 +80,6 @@ h4 {
 
 h1 {
     font-size: clamp(1.5rem, 7vw, 2.5rem);
-}
-
-.logo-marvel {
-    margin: 5px 30px 0;
-    width: clamp(100px, 30%, 200px);
 }
 
 h2 {
@@ -188,6 +183,20 @@ ul.menu {
     cursor: pointer;
 }
 
+.acceso1 {
+    border-top: 1px dotted var(--blanco)
+}
+
+.acceso2 {
+    border-bottom: 1px dotted var(--blanco);
+}
+
+.acceso1,
+.acceso2 {
+    color: var(--amarilloClaro);
+    font-weight: 500;
+}
+
 .training {
     color: var(--rojoClaro);
 }
@@ -212,7 +221,7 @@ ul.menu {
 
 img.logo {
     width: min(50vw, 350px);
-    padding: 30px 0;
+    padding: 0px 0 30px;
 }
 
 .links-container {

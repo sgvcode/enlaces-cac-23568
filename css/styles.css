@@ -146,6 +146,10 @@ nav {
     cursor: pointer;
 }
 
+.titulos {
+    margin-top: 1rem;
+}
+
 ul.menu {
     position: absolute;
     width: 240px;

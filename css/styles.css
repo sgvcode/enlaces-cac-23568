@@ -274,6 +274,9 @@ img.logo {
 }
 
 .b-chicos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: .9rem;
     background-color: var(--rojoClaro);
 }

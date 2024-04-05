@@ -2,6 +2,11 @@ body.training {
     background-color: var(--blanco);
 }
 
+img {
+    border: none;
+    /* mask-image: linear-gradient(black 80%, transparent); */
+}
+
 .logo-marvel {
     margin: 5px 30px 0;
     width: clamp(100px, 30%, 200px);
